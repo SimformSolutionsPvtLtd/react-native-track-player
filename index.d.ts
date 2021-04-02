@@ -225,6 +225,7 @@ declare namespace RNTrackPlayer {
     PLAYBACK_STATE: EventType;
     PLAYBACK_TRACK_CHANGED: EventType;
     PLAYBACK_QUEUE_ENDED: EventType;
+    PLAYBACK_AUDIO_ENDED: EventType;
     PLAYBACK_ERROR: EventType;
     PLAYBACK_METADATA_RECEIVED: EventType;
   };
