@@ -99,7 +99,13 @@ public class RNTrackPlayerAudioPlayer: QueuedAudioPlayer {
 				"track": (self.currentItem as? Track)?.id,
 				"position": self.currentTime,
 				])
-		} 
+	} else {
+            self.reactEventEmitter.sendEvent(withName: "playback-audio-ended", body: [
+                "track": (self.currentItem as? Track)?.id,
+                "position": self.currentTime,
+                ])
+        }
+
 		super.AVWrapperItemDidPlayToEndTime()
     }
 
