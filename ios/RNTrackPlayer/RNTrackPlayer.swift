@@ -75,6 +75,7 @@ public class RNTrackPlayer: RCTEventEmitter {
     @objc(supportedEvents)
     override public func supportedEvents() -> [String] {
         return [
+            "playback-audio-ended",
             "playback-queue-ended",
             "playback-state",
             "playback-error",
