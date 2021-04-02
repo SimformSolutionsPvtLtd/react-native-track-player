@@ -8,6 +8,7 @@ declare namespace RNTrackPlayer {
     | "playback-state"
     | "playback-error"
     | "playback-queue-ended"
+    | "playback-audio-ended"
     | "playback-track-changed"
     | "playback-metadata-received"
     | "remote-play"
