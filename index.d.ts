@@ -8,6 +8,7 @@ declare namespace RNTrackPlayer {
     | "playback-state"
     | "playback-error"
     | "playback-queue-ended"
+    | "playback-audio-ended"
     | "playback-track-changed"
     | "playback-metadata-received"
     | "remote-play"
@@ -224,6 +225,7 @@ declare namespace RNTrackPlayer {
     PLAYBACK_STATE: EventType;
     PLAYBACK_TRACK_CHANGED: EventType;
     PLAYBACK_QUEUE_ENDED: EventType;
+    PLAYBACK_AUDIO_ENDED: EventType;
     PLAYBACK_ERROR: EventType;
     PLAYBACK_METADATA_RECEIVED: EventType;
   };

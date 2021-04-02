@@ -15,6 +15,7 @@
         public const string PlaybackState = "playback-state";
         public const string PlaybackTrackChanged = "playback-track-changed";
         public const string PlaybackQueueEnded = "playback-queue-ended";
+        public const string PlaybackAudioEnded = "playback-audio-ended";
         public const string PlaybackError = "playback-error";
     }
 
