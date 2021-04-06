@@ -251,6 +251,7 @@ public abstract class ExoPlayback<T extends Player> implements EventListener, Me
             // We'll use its duration instead of the last known position
             if (reason == Player.DISCONTINUITY_REASON_PERIOD_TRANSITION && lastKnownWindow != C.INDEX_UNSET) {
                 if (lastKnownWindow >= player.getCurrentTimeline().getWindowCount()) return;
+                manager.onEndAudio(previous, lastKnownPosition);
                 long duration = player.getCurrentTimeline().getWindow(lastKnownWindow, new Window()).getDurationMs();
                 if(duration != C.TIME_UNSET) lastKnownPosition = duration;
             }

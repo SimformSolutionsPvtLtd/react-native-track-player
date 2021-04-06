@@ -32,6 +32,7 @@ public class MusicEvents extends BroadcastReceiver {
     // Playback Events
     public static final String PLAYBACK_STATE = "playback-state";
     public static final String PLAYBACK_TRACK_CHANGED = "playback-track-changed";
+    public static final String PLAYBACK_AUDIO_ENDED = "playback-audio-ended";
     public static final String PLAYBACK_QUEUE_ENDED = "playback-queue-ended";
     public static final String PLAYBACK_METADATA = "playback-metadata-received";
     public static final String PLAYBACK_ERROR = "playback-error";
